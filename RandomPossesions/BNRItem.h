@@ -15,6 +15,8 @@
     int valueInDollars;
     NSDate *dateCreated;
 }
+
+- (void) doSomethingWeird;
 + (id) randomItem;
 
 - (id) initWithItemName:(NSString *)name
