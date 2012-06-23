@@ -21,7 +21,7 @@ int main(int argc, const char * argv[])
             [items addObject:p];
         }
         
-        for(int i = 0; i <= [items count]; i++){
+        for(int i = 0; i < [items count]; i++){
             NSLog(@"%@", [items objectAtIndex:i]);
         }
         //Destroy the array pointed to by items
