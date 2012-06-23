@@ -9,5 +9,10 @@
 #import "BNRItem.h"
 
 @interface BNRContainer : BNRItem
+{
+    NSMutableArray *items;
+}
 
+- (void) addItem:(BNRItem *)item;
+- (void) addContainer:(BNRContainer *)container;
 @end
