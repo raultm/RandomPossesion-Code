@@ -16,15 +16,14 @@ int main(int argc, const char * argv[])
         
         NSMutableArray *items = [[NSMutableArray alloc] init];
         
-        [items addObject:@"One"];
-        [items addObject:@"Two"];
-        [items addObject:@"Three"];
+        for(int i = 0; i < 10; i++){
+            BNRItem * p = [BNRItem randomItem];
+            [items addObject:p];
+        }
         
-        BNRItem *p = [[BNRItem alloc] initWithItemName:@"Red Sofa" 
-                                        valueInDollars:100 
-                                          serialNumber:@"A1B2C"];
-        NSLog(@"%@", p);
-        
+        for(int i = 0; i < [items count]; i++){
+            NSLog(@"%@", [items objectAtIndex:i]);
+        }
         //Destroy the array pointed to by items
         items = nil;
     }
