@@ -10,6 +10,7 @@
 		A3A25980158E48C6001C3171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2597F158E48C6001C3171 /* Foundation.framework */; };
 		A3A25983158E48C6001C3171 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A25982158E48C6001C3171 /* main.m */; };
 		A3A25987158E48C6001C3171 /* RandomPossesions.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A3A25986158E48C6001C3171 /* RandomPossesions.1 */; };
+		A3A2598F158E51EA001C3171 /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2598E158E51EA001C3171 /* BNRItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +30,10 @@
 		A3A2597B158E48C5001C3171 /* RandomPossesions */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomPossesions; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A2597F158E48C6001C3171 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A3A25982158E48C6001C3171 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A3A25985158E48C6001C3171 /* RandomPossesions-Prefix.pch */ = {isa = PBXFileReference; path = "RandomPossesions-Prefix.pch"; sourceTree = "<group>"; };
+		A3A25985158E48C6001C3171 /* RandomPossesions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RandomPossesions-Prefix.pch"; sourceTree = "<group>"; };
 		A3A25986158E48C6001C3171 /* RandomPossesions.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RandomPossesions.1; sourceTree = "<group>"; };
+		A3A2598D158E51EA001C3171 /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
+		A3A2598E158E51EA001C3171 /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				A3A25982158E48C6001C3171 /* main.m */,
+				A3A2598D158E51EA001C3171 /* BNRItem.h */,
+				A3A2598E158E51EA001C3171 /* BNRItem.m */,
 				A3A25986158E48C6001C3171 /* RandomPossesions.1 */,
 				A3A25984158E48C6001C3171 /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A25983158E48C6001C3171 /* main.m in Sources */,
+				A3A2598F158E51EA001C3171 /* BNRItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
