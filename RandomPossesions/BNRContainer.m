@@ -43,11 +43,11 @@
     [items addObject:item];
 }
 
-- (void) addContainer:(BNRContainer *)container{
+- (void) addContainer:(BNRContainer *)local_container{
     if (!items) {
         items = [[NSMutableArray alloc] init];
     }
-    [items addObject:container];
+    [items addObject:local_container];
 }
 
 @end
