@@ -15,21 +15,15 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        NSMutableArray *items = [[NSMutableArray alloc] init];
-        
         BNRItem *backpack = [[BNRItem alloc] init];
         [backpack setItemName:@"Backpack"];
-        [items addObject:backpack];
         
         BNRItem *calculator = [[BNRItem alloc] init];
         [calculator setItemName:@"Calculator"];
-        [items addObject:calculator];
         
         [backpack setContainedItem:calculator];
         
-        //Destroy the array pointed to by items
-        NSLog(@"Setting items to nil...");
-        items = nil;
+        backpack = nil;
     }
     return 0;
 }
