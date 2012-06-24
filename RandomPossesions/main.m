@@ -17,29 +17,15 @@ int main(int argc, const char * argv[])
         
         NSMutableArray *items = [[NSMutableArray alloc] init];
         
-        for(int i = 0; i < 10; i++){
-            BNRItem * p = [BNRItem randomItem];
-            [items addObject:p];
-        }
+        BNRItem *backpack = [[BNRItem alloc] init];
+        [backpack setItemName:@"Backpack"];
+        [items addObject:backpack];
         
-        BNRContainer *container1 = [[BNRContainer alloc] initWithItemName:@"Container_1" valueInDollars:100 serialNumber:@"C1"];
+        BNRItem *calculator = [[BNRItem alloc] init];
+        [calculator setItemName:@"Calculator"];
+        [items addObject:calculator];
         
-        BNRContainer *container2 = [[BNRContainer alloc] initWithItemName:@"Container_2" valueInDollars:10 serialNumber:@"C2"];
-        
-        for(int i = 0; i < 2; i++){
-            //NSLog(@"Item to add %@", [items objectAtIndex:i]);
-            [container2 addItem:[items objectAtIndex:i]]; 
-        }
-        
-        //NSLog(@"%@", container2);
-        
-        for(int i = 0; i < [items count]; i++){
-            //NSLog(@"Item to add %@", [items objectAtIndex:i]);
-            [container1 addItem:[items objectAtIndex:i]]; 
-        }
-        
-        [container1 addContainer:container2];
-        //NSLog(@"%@", container1);
+        [backpack setContainedItem:calculator];
         
         //Destroy the array pointed to by items
         NSLog(@"Setting items to nil...");

@@ -69,6 +69,25 @@
     return self;
 }
 
+- (void) setContainedItem:(BNRItem *)i
+{
+    containedItem = i;
+    [i setContainer:self];
+}
+- (BNRItem *)containedItem
+{
+    return containedItem;
+}
+
+- (void) setContainer:(BNRItem *)i
+{
+    container = i;
+}
+- (BNRItem *)container
+{
+    return container;
+}
+
 - (void) setItemName:(NSString *)str
 {
     itemName = str;
