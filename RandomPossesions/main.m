@@ -24,6 +24,10 @@ int main(int argc, const char * argv[])
         [backpack setContainedItem:calculator];
         
         backpack = nil;
+        
+        NSLog(@"Container: %@", [calculator container]);
+        
+        calculator = nil;
     }
     return 0;
 }
