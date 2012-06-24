@@ -9,10 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface BNRItem : NSObject
-{
-    BNRItem *containedItem;
-}
-
 + (id) randomItem;
 
 - (id) initWithItemName:(NSString *)name
